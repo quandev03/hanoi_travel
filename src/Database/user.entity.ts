@@ -1,8 +1,8 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class User {
-  //primary generated column 
+  //primary generated column
   @PrimaryGeneratedColumn()
   //create random number
   idUser: string;
@@ -16,17 +16,16 @@ export class User {
   @Column()
   fullName: string;
 
-  @Column({default: false})
+  @Column({ default: false })
   isActive: boolean;
 
   @Column()
   birthday: string;
 
   @Column()
-  codeVerify: string
+  codeVerify: string;
 
   @Column()
   //convert to md5
-  password: string
-
+  password: string;
 }
